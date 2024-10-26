@@ -1,7 +1,7 @@
 *{text-align: center;}
 @font-face {
     font-family: 'Retro';
-    src: url('fonts/cinecaption226.ttf') format('truetype');
+    src: url('./assets/cinecaption226.ttf') format('truetype');
     }
 body{
     background-color: #6d5743;

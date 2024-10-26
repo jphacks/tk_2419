@@ -1,28 +1,25 @@
 {
-  "name": "tk_2419",
-  "version": "1.0.0",
-  "description": "[![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2024/07/JPHACKS2024_ogp.jpg)](https://www.youtube.com/watch?v=DZXUkEj-CSI)",
-  "main": "index.js",
+  "name": "instant-movie",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "nodemon server.js"
+    "dev": "nodemon src/server/main.js -w src/server",
+    "start": "NODE_ENV=production node src/server/main.js",
+    "build": "vite build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jphacks/tk_2419.git"
-  },
-  "author": "",
-  "license": "CC-BY-SA-4.0",
-  "bugs": {
-    "url": "https://github.com/jphacks/tk_2419/issues"
-  },
-  "homepage": "https://github.com/jphacks/tk_2419#readme",
   "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.21.1",
-    "http": "^0.0.1-security",
-    "nodemon": "^3.1.7",
-    "os": "^0.1.2",
-    "path": "^0.12.7",
-    "playwright": "^1.48.2"
+    "express": "^4.18.2",
+    "framer-motion": "^11.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "vite-express": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^4.2.0",
+    "nodemon": "^3.0.1",
+    "vite": "^5.0.2"
   }
 }
