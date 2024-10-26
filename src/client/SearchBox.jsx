@@ -11,8 +11,14 @@ export const SearchBox = () => {
 	const [searchWord, setSearchWord ] = useState("");
 	return (
 		<main>
-			<h1 class="top">Instant Movie</h1>
-			<motion.div 
+			<motion.div
+			className="relative w-auto my-6 mx-auto max-w-lg"
+  		initial={{ opacity: 0, transform: "translateY(0%)" }}
+  		animate={{ opacity: 1, transform: "translateY(0)" }}
+  		transition={{ duration: 1.0 }}>
+				<h1 class="top">Instant Movie</h1>
+			</motion.div>
+			<motion.div
 			className="relative w-auto my-6 mx-auto max-w-lg"
   		initial={{ opacity: 0, transform: "translateY(40%)" }}
   		animate={{ opacity: 1, transform: "translateY(0)" }}
