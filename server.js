@@ -6,6 +6,8 @@ const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 
+app.use(express.static('./'));
+
 const folderPath = path.join(__dirname, 'modules');
 const moduleFiles = fs.readdirSync(folderPath);
 
