@@ -1,0 +1,23 @@
+*{text-align: center;}
+body{
+    background-color: #6d5743;
+}
+h1{font-size: 80px;
+   margin:75px 0px 100px 0px;
+   font-family: ;
+}
+
+#search{
+    display: flex;
+    justify-content: center;
+    height:50px;
+}
+#sbox{
+    width: 80%;
+}
+#sbtn{
+    width: 50px;
+}
+
+
+
