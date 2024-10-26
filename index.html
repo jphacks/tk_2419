@@ -1,20 +1,21 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-<body>
-	<main>
-		<h1 class="top">Instant Movie</h1>
-	
-	<form class="search" method="get">
-		<input class="sbox" name="query" placeholder="検索したいものを入力してください。">
-		<input class="sbtn" type="submit" value="検索">
-	</form>
-	</main>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instant Movie</title>
+  </head>
+  <body>
+		<main>
+			<h1 class="top">Instant Movie</h1>
+		
+		<form class="search" method="get">
+			<input class="sbox" name="query" placeholder="検索したいものを入力してください。">
+			<input class="sbtn" type="submit" value="検索">
+		</form>
+		</main>
+    <div id="root"></div>
+    <script type="module" src="/src/client/main.jsx"></script>
+  </body>
 </html>
