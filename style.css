@@ -8,7 +8,7 @@ h1{font-size: 80px;
    -webkit-text-stroke: 1px #FFF;
    font-family: serif;/*あとで変更*/
 }
-/*あああああああああああああああああああああああ*/
+/*ようこそジャパリパークへ*/
 #search{
     display: flex;
     justify-content: center;
@@ -22,6 +22,7 @@ h1{font-size: 80px;
 }
 #sbtn{
     width: 50px;
+    border-collapse: collapse;
 }
 
 
