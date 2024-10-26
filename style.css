@@ -8,17 +8,16 @@ h1{font-size: 80px;
    -webkit-text-stroke: 1px #FFF;
    font-family: serif;/*あとで変更*/
 }
-/*ようこそジャパリパークへ*/
+
 #search{
     display: flex;
     justify-content: center;
     height:50px;
-    border-collapse: collapse;
 }
 #sbox{
     background-color: beige;
     width: 80%;
-    border-collapse: collapse;
+    border-style: none;
 }
 #sbtn{
     width: 50px;
