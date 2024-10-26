@@ -21,7 +21,9 @@ h1{font-size: 80px;
 }
 #sbtn{
     width: 50px;
-    border-collapse: collapse;
+    border-style: none;
+    background-color: rgb(196, 196, 248);
+
 }
 
 
