@@ -1,9 +1,20 @@
 import { useState } from "react";
 
-function GoogleMap() {
-	return (
-	<div id="map">
-		<p>Google map Here</p>
-	</div>
-	);
+export const GoogleMap = (props) => {
+	if (props.keyword) {
+		return (
+			<>
+				<p>{props.keyword}</p>
+				<p>Google Map</p>
+			</>
+		);
+	}
+	else {
+		return (
+			<>
+			</>
+		)
+	}
 }
+
+export default GoogleMap;
