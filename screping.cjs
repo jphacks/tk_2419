@@ -1,6 +1,7 @@
 const playwright = require('playwright');
 const sqlite3 = require('sqlite3');
-const db = new sqlite3.Database('movies.db');
+
+// const db = new sqlite3.Database('movies.db');
 
 async function getMovieTitles(url) {
     const browser = await playwright.chromium.launch();
