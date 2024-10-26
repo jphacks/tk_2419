@@ -1,0 +1,25 @@
+{
+  "name": "tk_2419",
+  "version": "1.0.0",
+  "description": "[![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2024/07/JPHACKS2024_ogp.jpg)](https://www.youtube.com/watch?v=DZXUkEj-CSI)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jphacks/tk_2419.git"
+  },
+  "author": "",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/jphacks/tk_2419/issues"
+  },
+  "homepage": "https://github.com/jphacks/tk_2419#readme",
+  "dependencies": {
+    "http": "^0.0.1-security",
+    "nodemon": "^3.1.7",
+    "os": "^0.1.2",
+    "playwright": "^1.48.2"
+  }
+}
