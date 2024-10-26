@@ -9,7 +9,7 @@ const app = express();
 const folderPath = path.join(__dirname, 'modules');
 const moduleFiles = fs.readdirSync(folderPath);
 
-for (const file of moduleFiles) {
+for (const file of moduleFiles.filter((file) => file.endsWith('.js'))) {
 	const filePath = path.join(folderPath, file);
 	require(filePath);
 }
