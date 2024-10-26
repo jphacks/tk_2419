@@ -1,6 +1,10 @@
 const http = require('http');
 const fs = require('fs');
 const os = require("os");
+const path = require('path');
+const bodyParser = require('body-parser');
+const express = require('express');
+const app = express();
 
 // get host ip
 function getIpAddress() {
@@ -8,23 +12,15 @@ function getIpAddress() {
   const net = nets["en0"]?.find((v) => v.family == "IPv4");
   return !!net ? net.address : null;
 }
-
 const hostname = getIpAddress();
+app.use('/public',express.static(path.join(__dirname,'static')));
+app.use(bodyParser.urlencoded({extended:false}));
 
-const server = http.createServer((req, res) => {
-	fs.readFile("index.html", (err, data) => {
-    if (err) {
-      res.statusCode = 500;
-      res.setHeader("Content-Type", "text/plain");
-      res.end("Internal Server Error\n");
-    } else {
-      res.statusCode = 200;
-      res.setHeader("Content-Type", "text/html");
-      res.end(data);
-    }
-	});
+// index.htmlを返す
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'index.html'));
 });
 
 // 3000番ポートで待ち受け
-server.listen(3000);
+app.listen(3000);
 console.log(`\nServer running at http://${hostname}:3000/\nor if you use localhost: http://localhost:3000/`);

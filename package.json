@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/jphacks/tk_2419#readme",
   "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.1",
     "http": "^0.0.1-security",
     "nodemon": "^3.1.7",
     "os": "^0.1.2",
