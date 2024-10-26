@@ -14,17 +14,17 @@ h1{font-size: 90px;
    font-family: Retro;
 }
 
-#search{
+.search{
     display: flex;
     justify-content: center;
     height:50px;
 }
-#sbox{
+.sbox{
     background-color: beige;
     width: 80%;
     border-style: none;
 }
-#sbtn{
+.sbtn{
     width: 50px;
     border-style: none;
     background-color: rgb(196, 196, 248);
