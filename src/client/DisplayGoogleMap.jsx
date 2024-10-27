@@ -2,7 +2,6 @@ import { useState } from "react";
 import configs from "./assets/config.json";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import { useGeolocated } from "react-geolocated";
-const sqlite3 = require('sqlite3');
 
 // get google api key
 const googleApiKey = configs.google_api_key;
