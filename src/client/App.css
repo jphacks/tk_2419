@@ -38,3 +38,9 @@ h1 {
 	background-color: rgb(196, 196, 248);
 
 }
+
+#info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
