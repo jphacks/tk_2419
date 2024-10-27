@@ -5,7 +5,6 @@ import DisplayGoogleMap from "./DisplayGoogleMap.jsx";
 
 export const SearchBox = () => {
 	const [searchWord, setSearchWord ] = useState("");
-	const [showGoogleMap, setShowGoogleMap] = useState(false);
 	const handleSubmit = (ev) => {
 		ev.preventDefault();
 		const form = new FormData(ev.currentTarget);
