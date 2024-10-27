@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from 'framer-motion';
 
-import GoogleMap from "./GoogleMap.jsx";
+import DisplayGoogleMap from "./DisplayGoogleMap.jsx";
 
 export const SearchBox = () => {
 	const [searchWord, setSearchWord ] = useState("");
@@ -32,7 +32,7 @@ export const SearchBox = () => {
 					<input class="sbtn" type="submit" value="検索" />
 				</form>
 			</motion.div>
-			<GoogleMap keyword={searchWord}/>
+			<DisplayGoogleMap keyword={searchWord}/>
 		</main>
 	)
 }
